@@ -1,0 +1,28 @@
+/* ===========================================================
+   App.css — สไตล์ของ Portfolio
+   (สไตล์ template ของ Vite ถูกล้างออกหมดแล้ว เริ่มจากศูนย์)
+   =========================================================== */
+
+/* โครงหน้าเว็บแบบหน้าเดียวเลื่อนลง */
+section {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 72px 24px;
+  box-sizing: border-box;
+
+  /* กันหัวข้อโดนแถบเมนูบังตอนกดลิงก์เลื่อน */
+  scroll-margin-top: 80px;
+}
+
+section + section {
+  border-top: 1px solid var(--border);
+}
+
+@media (max-width: 1024px) {
+  section {
+    padding: 48px 20px;
+  }
+}
+
+/* 👇 เขียนสไตล์ของ component ตัวเองต่อจากตรงนี้ */
