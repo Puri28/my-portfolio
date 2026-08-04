@@ -2,6 +2,7 @@ import AboutMe from './AboutMe'
 import SkillItem from './SkillItem'
 import './App.css'
 import projects from './data/projects'
+import skills from './data/skills'
 
 function App() {
   return (
@@ -15,10 +16,9 @@ function App() {
 
       <section id="skills">
         <h2>Skills</h2>
-        {/* 🔧 การบ้าน: เปลี่ยน 3 บรรทัดนี้ให้มาจาก src/data/skills.js ด้วย .map() */}
-        <SkillItem skillName="JavaScript" level="ปานกลาง" />
-        <SkillItem skillName="React" level="ปานกลาง" />
-        <SkillItem skillName="HTML/CSS" level="ปานกลาง" />
+        {skills.map((skill) => (
+          <SkillItem key={skill.id} skillName={skill.name} level={skill.level} />
+        ))}
       </section>
 
       {<section id="projects">
