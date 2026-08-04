@@ -1,6 +1,7 @@
 import AboutMe from './AboutMe'
 import SkillItem from './SkillItem'
 import './App.css'
+import projects from './data/projects'
 
 function App() {
   return (
@@ -20,7 +21,14 @@ function App() {
         <SkillItem skillName="HTML/CSS" level="ปานกลาง" />
       </section>
 
-      {/* TODO: <section id="projects">  — การ์ดผลงาน สร้างจาก .map() */}
+      {<section id="projects">
+  <h2>Projects</h2>
+  <ul>
+    {projects.map((project) => (
+      <li key={project.id}>{project.title}</li>
+    ))}
+  </ul>
+</section>}
       {/* TODO: <section id="contact">   — ช่องทางติดต่อ */}
       {/* TODO: <Footer /> */}
     </>

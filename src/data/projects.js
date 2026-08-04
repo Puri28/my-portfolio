@@ -27,6 +27,7 @@ const projects = [
     demoUrl: "#",
     githubUrl: "#",
   },
+
 ];
 
 export default projects;
