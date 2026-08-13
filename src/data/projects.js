@@ -5,7 +5,7 @@ const projects = [
     description:
       "เว็บไซต์ 2 หน้าที่เขียนด้วย Semantic HTML ล้วน จัดหน้าด้วย Flexbox และรองรับทุกขนาดหน้าจอด้วย Media Query พร้อมแบบฟอร์มติดต่อที่ตรวจสอบข้อมูลก่อนส่งโดยไม่ใช้ JavaScript",
     image: "",
-    tags: ["HTML", "CSS", "Responsive", "JavaScript_"],
+    tags: ["HTML", "CSS", "Responsive", "JavaScript"],
     demoUrl: "#",
     githubUrl: "#",
   },

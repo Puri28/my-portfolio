@@ -26,3 +26,9 @@ section + section {
 }
 
 /* 👇 เขียนสไตล์ของ component ตัวเองต่อจากตรงนี้ */
+.tags,
+.links,
+.hero-buttons {
+  display: flex;
+  gap: 12px;
+}
