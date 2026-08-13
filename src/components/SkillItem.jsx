@@ -8,7 +8,7 @@ function SkillItem(props) {
     };
 
     return (
-        <div skillname="skill-item">
+        <div className="skill-item">
             ทักษะ : { props. skillName} ระดับ : { props. level}  <button onClick={toggleFavorite}>
                 {isFavorite ? '★★★' : '☆☆'} </button>
         </div>

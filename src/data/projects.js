@@ -1,33 +1,24 @@
 const projects = [
   {
     id: 1,
-    title: "Personal Portfolio",
+    title: "Responsive Web Page",
     description:
-      "เว็บ Portfolio ส่วนตัวแบบหน้าเดียว แสดงประวัติ ทักษะ ผลงาน และใบรับรอง 16 ใบ พร้อมระบบกรองตามหมวดหมู่ สร้างด้วย React + Vite รองรับ Dark Mode และจอมือถือ",
+      "เว็บไซต์ 2 หน้าที่เขียนด้วย Semantic HTML ล้วน จัดหน้าด้วย Flexbox และรองรับทุกขนาดหน้าจอด้วย Media Query พร้อมแบบฟอร์มติดต่อที่ตรวจสอบข้อมูลก่อนส่งโดยไม่ใช้ JavaScript",
     image: "",
-    tags: ["React", "Vite", "CSS"],
+    tags: ["HTML", "CSS", "Responsive", "JavaScript_"],
     demoUrl: "#",
-    githubUrl: "https://github.com/Puri28/my-portfolio",
+    githubUrl: "#",
   },
   {
     id: 2,
-    title: "ร้านค้าเสื้อกีฬาออนไลน์",
-    description: "ร้านค้าเสื้อกีฬาออนไลน์ที่มีระบบจัดการสินค้าและคำสั่งซื้อ สร้างด้วย React + Express + MongoDB",
+    title: "Kanban Board",
+    description:
+      "กระดานจัดการงานแบบลากวางได้ 4 คอลัมน์ การ์ดเปลี่ยนสีอัตโนมัติตามคอลัมน์ที่ถูกวาง พัฒนาด้วย JavaScript ล้วน โดยใช้ DOM API และ Drag & Drop Event",
     image: "",
-    tags: ["React", "Express", "MongoDB"],
+    tags: ["JavaScript", "DOM", "Drag & Drop"],
     demoUrl: "#",
     githubUrl: "#",
   },
-  {
-    id: 3,
-    title: "Todo List App",
-    description: "แอป Todo List",
-    image: "",
-    tags: ["React", "useState"],
-    demoUrl: "#",
-    githubUrl: "#",
-  },
-
 ];
 
 export default projects;
