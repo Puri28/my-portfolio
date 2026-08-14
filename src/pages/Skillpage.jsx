@@ -1,4 +1,4 @@
-import skills from '../data/Skills'
+import Skills from '../data/Skills'
 
 function Skillpage() {
   return (
