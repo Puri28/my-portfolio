@@ -1,9 +1,25 @@
+import { useState } from "react";
+
 function Navbar(props) {
+  const [isOpen, setIsOpen] = useState(false);
+  
+  const goto = (page) => {
+    props.setCurrentPage(page);
+    setIsOpen(false);
+  };
+
   return (
     <nav className="navbar">
-      <button onClick={() => props.setCurrentPage("home")}>home</button>
-      <button onClick={() => props.setCurrentPage("skills")}>my skill</button>
-      <button onClick={() => props.setCurrentPage("contact")}>contact</button>
+      <button className="nav-logo" onClick={() => setIsOpen(!isOpen)}>P</button> 
+
+      <div className={`nav-links ${isOpen ? "open":""}`}>
+        <button onClick={() => goto("home")}>Home</button>
+        <button onClick={() => goto("skills")}>MY SKILL</button>
+        <button onClick={() => goto("contact")}>CONTACT</button>
+      </div>
+
+      <div className="nav-name">Phuriphat</div>
+
     </nav>
   );
 }

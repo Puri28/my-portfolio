@@ -8,7 +8,7 @@ function Homepage() {
       <Hero />
 
       <section id="projects">
-        <h2>my project</h2>
+        <h2>MY PROJECT</h2>
         {projects.map((project) => (
           <ProjectCard
             key={project.id}

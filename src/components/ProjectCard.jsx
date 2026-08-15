@@ -14,8 +14,8 @@ function ProjectCard(props) {
       </div>
 
       <div className="links">
-        <a href={props.demoUrl} target="_blank">Live Demo</a>
-        <a href={props.githubUrl} target="_blank">Source Code</a>
+        <a href={props.demoUrl} target="_blank" rel="noopener noreferrer">Live Demo</a>
+        <a href={props.githubUrl} target="_blank" rel="noopener noreferrer">Source Code</a>
       </div>
 
     </div>
