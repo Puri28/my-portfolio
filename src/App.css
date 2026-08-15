@@ -334,3 +334,21 @@ section + section {
   color: var(--text);
   margin: 0;
 }
+
+.cert-card.soon {
+  border-style: dashed;
+  opacity: 0.65;
+}
+
+.cert-placeholder {
+  width: 100%;
+  aspect-ratio: 4/3;
+  border: 1px dashed var(--border);
+  border-radius: 8px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  color: var(--text);
+}
