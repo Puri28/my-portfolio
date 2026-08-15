@@ -19,6 +19,16 @@ const projects = [
     demoUrl: "https://puri28.github.io/kanban-board/",
     githubUrl: "https://github.com/Puri28/kanban-board",
   },
+  {
+    id: 3,
+    title: "Expense Tracker",
+    description:
+      "แอปบันทึกรายรับ-รายจ่าย ทำ CRUD ครบวงจรด้วย React — เพิ่ม แก้ไข ลบ และกรองตามประเภท จัดการ state ด้วย useState และคำนวณยอดสรุปแบบ derived value โดยไม่เก็บเป็น state ซ้ำ",
+    image: "/projects/expense-tracker.webp",
+    tags: ["React", "useState", "CRUD"],
+    demoUrl: "https://expense-tracker-tau-liart.vercel.app/",
+    githubUrl: "https://github.com/Puri28/expense-tracker",
+  },
 ];
 
 export default projects;
