@@ -1,4 +1,4 @@
-function Hero() {
+function Hero(props) {
   return (
     <section id="hero">
       <h1>
@@ -6,11 +6,28 @@ function Hero() {
         <span className="name-last">CHOOMPUNGAM</span>
       </h1>
 
-      <p className="hero-lead">
-        กราฟิกดีไซเนอร์ที่เปลี่ยนสายมาเป็น Frontend Developer
-        ออกแบบเสื้อกีฬาให้ลูกค้าองค์กรมา 1 ปี
-        และผันตัวมาเขียนโค้ดเพราะอยากทำให้สิ่งที่ออกแบบใช้งานได้จริงบนเว็บ
-      </p>
+      <div className="hero-lead">
+        <p className="lead-role">Frontend Developer</p>
+
+        <p className="lead-sub">
+          สวัสดีครับ ผมภูริพัส ชุมภูงาม
+          กำลังสนใจในตำแหน่ง Fontend Devloper 
+          เป็นคนที่ชอบเรียนรู้และพัฒนาครับ
+        </p>
+
+        <div className="hero-buttons">
+          <a href="#projects" className="btn btn-primary">
+            ดูผลงาน
+          </a>
+          <button
+            type="button"
+            className="btn btn-ghost"
+            onClick={() => props.setPage("contact")}
+          >
+            ติดต่อผม
+          </button>
+        </div>
+      </div>
 
       <div className="hero-photo">
         <img src="/profile.webp" alt="Phuriphat Choompungam" />

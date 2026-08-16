@@ -11,7 +11,7 @@ function App() {
     return (
         <>
             <Navbar cPage={Page} setCurrentPage={setPage} />
-            {Page === 'home' && <Homepage />}
+            {Page === 'home' && <Homepage setPage={setPage} />}
             {Page === 'skills' && <Skillpage />}
             {Page === 'contact' && <Contactpage />}
         </>
