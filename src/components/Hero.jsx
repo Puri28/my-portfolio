@@ -1,18 +1,21 @@
 function Hero() {
   return (
     <section id="hero">
-      <div>
-        <p>สวัสดีครับ</p>
-        <h1>Phuriphat Choompungam</h1>
-        <h2>Frontend Developer , Full-Stack Developer</h2>
-        <p>
-          ออกแบบเสื้อกีฬามา 1 ปี แล้วหันมาเขียนโค้ด
-          เพราะอยากทำให้สิ่งที่ออกแบบใช้งานได้จริงบนเว็บและชอบเรียนรู้และพัฒนาตัวเองอยู่เสมอ
-        </p>
-      {/* <img src="" alt="Puripat Choompungam" /> */}
-        </div>
+      <h1>
+        <span className="name-first">PHURIPHAT</span>
+        <span className="name-last">CHOOMPUNGAM</span>
+      </h1>
+
+      <p className="hero-lead">
+        กราฟิกดีไซเนอร์ที่เปลี่ยนสายมาเป็น Frontend Developer
+        ออกแบบเสื้อกีฬาให้ลูกค้าองค์กรมา 1 ปี
+        และผันตัวมาเขียนโค้ดเพราะอยากทำให้สิ่งที่ออกแบบใช้งานได้จริงบนเว็บ
+      </p>
+
+      <div className="hero-photo">
+        <img src="/profile.webp" alt="Phuriphat Choompungam" />
+      </div>
     </section>
-    
   );
 }
 

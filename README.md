@@ -1,16 +1,39 @@
-# React + Vite
+# Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Portfolio website built with React and Vite — showcasing my projects, skills and certificates.
 
-Currently, two official plugins are available:
+**🔗 Live:** https://puripat.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+![Portfolio](public/projects/landing-pace.webp)
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Page switching without a router** — lightweight navigation using `useState` and conditional rendering
+- **Responsive navbar** — collapses into a slide-out menu on mobile using `transform` + `opacity` (animatable, unlike `display`)
+- **Data-driven content** — projects, skills and certificates all render from data files, so adding an entry means editing one array
+- **Dark theme** — colours defined once as CSS custom properties in `:root`
 
-## Expanding the Oxlint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+| | |
+|---|---|
+| Framework | React 19 · Vite |
+| Styling | CSS (custom properties, Flexbox, Grid) |
+| Deployment | Vercel |
+
+## Project Structure
+
+```
+src/
+├── components/    Navbar · Hero · ProjectCard
+├── pages/         Homepage · Skillpage · Contactpage
+├── data/          projects.js · skills.js · certificates.js
+└── App.jsx        page state + routing
+```
+
+## Running Locally
+
+```bash
+npm install
+npm run dev
+```
