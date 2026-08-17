@@ -1,10 +1,6 @@
 import {
-  FaEnvelope,
-  FaPhone,
-  FaGithub,
   FaFacebook,
   FaLine,
-  FaDiscord,
 } from "react-icons/fa";
 
 function Contactpage() {
@@ -59,7 +55,7 @@ function Contactpage() {
 
         <a
           className="contact-btn"
-          href="https://line.me/ti/p/~{puripatch55}"
+          href="https://line.me/ti/p/~puripatch55"
           target="_blank"
           rel="noopener noreferrer"
         >

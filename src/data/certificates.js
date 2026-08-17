@@ -22,6 +22,13 @@ const certificates = [
   },
   {
     id: 4,
+    title: "ก้าวสู่เส้นทาง Back-end Developer ด้วย Node.js",
+    issuer: "FutureSkill",
+    image: "/certificates/nodejs-basic.webp",
+    status: "done",
+  },
+  {
+    id: 5,
     title: "SOON",
     issuer: "FutureSkill",
     image: "",

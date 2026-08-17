@@ -313,6 +313,23 @@ section + section {
 /* ============================================================
    5. SKILLS
    ============================================================ */
+.skill-layout {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 48px;
+  align-items: start;
+  padding-right: 45px;
+}
+
+/* หัวข้อสองฝั่งต้องตั้งค่าเท่ากันทุกตัว ถึงจะอยู่ระดับเดียวกันเป๊ะ */
+.stack-list > h2,
+.resume-card > h3 {
+  margin: 0 0 24px;
+  font-size: clamp(24px, 4vw, 36px);
+  line-height: 1.2;
+  color: var(--text-h);
+}
+
 .stack-group {
   display: flex;
   flex-wrap: wrap;
@@ -326,6 +343,70 @@ section + section {
   margin: 0 0 4px;
   font-size: 16px;
   color: var(--text-h);
+}
+
+/* ── กล่อง Resume (คอลัมน์ขวา) ───────────────────────── */
+.resume-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+/* ปุ่มที่ครอบรูป — ล้างหน้าตา default ของ button ออกให้หมด */
+.resume-card button {
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: none;
+  border-radius: 8px;
+  cursor: zoom-in;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.resume-card button:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+
+.resume-card button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.resume-card img {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.resume-card .btn {
+  display: inline-block;
+  padding: 11px 26px;
+  border-radius: 999px;
+  font-family: inherit;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.resume-card .btn-primary {
+  background: var(--text-h);
+  color: var(--bg);
+  border: 1px solid var(--text-h);
+}
+
+.resume-card .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.resume-card .btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 
 /* ============================================================
@@ -528,6 +609,17 @@ section + section {
 @media (max-width: 1024px) {
   section {
     padding: 48px 20px;
+  }
+
+  /* ── Skills: เรียงลงมา Resume ไปอยู่ล่างสุด ── */
+  .skill-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding-right: 0;
+  }
+
+  .resume-card {
+    max-width: 360px;
   }
 
   /* ── Hero: เรียงลงมา จัดกลาง รูปอยู่ล่างสุด ── */

@@ -10,8 +10,7 @@ function Hero(props) {
         <p className="lead-role">Frontend Developer</p>
 
         <p className="lead-sub">
-          สวัสดีครับ ผมภูริพัส ชุมภูงาม
-          กำลังสนใจในตำแหน่ง Fontend Devloper 
+          สวัสดีครับ ผมภูริพัส ชุมภูงาม กำลังสนใจในตำแหน่ง Frontend Developer
           เป็นคนที่ชอบเรียนรู้และพัฒนาครับ
         </p>
 
@@ -26,6 +25,13 @@ function Hero(props) {
           >
             ติดต่อผม
           </button>
+          <a
+            href="/Phuriphat-Choompungam-Frontend-Developer.pdf"
+            className="btn btn-ghost" download
+          >
+            Download CV
+          </a>
+          
         </div>
       </div>
 

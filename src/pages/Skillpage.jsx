@@ -8,33 +8,58 @@ function Skillpage() {
   return (
     <>
       <section>
-        <h2>Tech Stack</h2>
+        <div className="skill-layout">
+          <div className="stack-list">
+            <h2>Tech Stack</h2>
 
-        <div className="stack-group">
-          <h3>Frontend</h3>
-          {skills
-            .filter((s) => s.category === "Frontend")
-            .map((s) => (
-              <span key={s.id}>{s.name}</span>
-            ))}
-        </div>
+            <div className="stack-group">
+              <h3>Frontend</h3>
+              {skills
+                .filter((s) => s.category === "Frontend")
+                .map((s) => (
+                  <span key={s.id}>{s.name}</span>
+                ))}
+            </div>
 
-        <div className="stack-group">
-          <h3>Tools</h3>
-          {skills
-            .filter((s) => s.category === "Tools")
-            .map((s) => (
-              <span key={s.id}>{s.name}</span>
-            ))}
-        </div>
+            <div className="stack-group">
+              <h3>Tools</h3>
+              {skills
+                .filter((s) => s.category === "Tools")
+                .map((s) => (
+                  <span key={s.id}>{s.name}</span>
+                ))}
+            </div>
 
-        <div className="stack-group">
-          <h3>Design</h3>
-          {skills
-            .filter((s) => s.category === "Design")
-            .map((s) => (
-              <span key={s.id}>{s.name}</span>
-            ))}
+            <div className="stack-group">
+              <h3>Design</h3>
+              {skills
+                .filter((s) => s.category === "Design")
+                .map((s) => (
+                  <span key={s.id}>{s.name}</span>
+                ))}
+            </div>
+          </div>
+
+          <div className="resume-card">
+            <h3>Resume</h3>
+            <button
+              onClick={() =>
+                setOpenCert({
+                  image: "/certificates/resume-preview.webp",
+                  title: "Resume",
+                })
+              }
+            >
+              <img src="/certificates/resume-preview.webp" alt="RESUME" />
+            </button>
+            <a
+              href="/Phuriphat-Choompungam-Frontend-Developer.pdf"
+              className="btn btn-primary"
+              download
+            >
+              Download CV
+            </a>
+          </div>
         </div>
       </section>
 
