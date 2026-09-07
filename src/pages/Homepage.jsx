@@ -10,7 +10,7 @@ function Homepage(props) {
       <section id="projects">
         <h2>MY PROJECTS</h2>
         <p className="section-lead">
-          ผลงานที่พัฒนาและ deploy ขึ้นใช้งานจริง กดดูได้ทุกชิ้น
+          งานออกแบบและงานที่เขียนโค้ดเอง กดดูได้ทุกชิ้น 
         </p>
 
         {projects.map((project) => (

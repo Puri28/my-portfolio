@@ -29,10 +29,24 @@ const certificates = [
   },
   {
     id: 5,
-    title: "SOON",
+    title: "เริ่มต้นสร้างและแสดงเนื้อหาของเว็บไซต์ด้วย HTML",
     issuer: "FutureSkill",
-    image: "",
-    status: "soon",
+    image: "/certificates/html-basic.webp",
+    status: "done",
+  },
+  {
+    id: 6,
+    title: "ปรับแต่งและจัดวางสไตล์ของเว็บไซต์ด้วย CSS",
+    issuer: "FutureSkill",
+    image: "/certificates/css-basic.webp",
+    status: "done",
+  },
+  {
+    id: 7,
+    title: "Basic React 3 : การแสดงผลตามข้อมูลที่มีการเปลี่ยนแปลง",
+    issuer: "FutureSkill",
+    image: "/certificates/react-basic-3.webp",
+    status: "done",
   },
 ];
 

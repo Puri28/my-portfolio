@@ -115,6 +115,7 @@ section + section {
   font-family: "Antonio", sans-serif;
   font-size: clamp(20px, 2.4vw, 30px);
   font-weight: 500;
+  line-height: 1.3;
   letter-spacing: 0.04em;
   color: var(--accent);
 }

@@ -12,32 +12,16 @@ function Skillpage() {
           <div className="stack-list">
             <h2>Tech Stack</h2>
 
-            <div className="stack-group">
-              <h3>Frontend</h3>
-              {skills
-                .filter((s) => s.category === "Frontend")
-                .map((s) => (
-                  <span key={s.id}>{s.name}</span>
-                ))}
-            </div>
-
-            <div className="stack-group">
-              <h3>Tools</h3>
-              {skills
-                .filter((s) => s.category === "Tools")
-                .map((s) => (
-                  <span key={s.id}>{s.name}</span>
-                ))}
-            </div>
-
-            <div className="stack-group">
-              <h3>Design</h3>
-              {skills
-                .filter((s) => s.category === "Design")
-                .map((s) => (
-                  <span key={s.id}>{s.name}</span>
-                ))}
-            </div>
+            {["Design", "UX", "Frontend", "Tools"].map((category) => (
+              <div className="stack-group" key={category}>
+                <h3>{category}</h3>
+                {skills
+                  .filter((s) => s.category === category)
+                  .map((s) => (
+                    <span key={s.id}>{s.name}</span>
+                  ))}
+              </div>
+            ))}
           </div>
 
           <div className="resume-card">
@@ -53,7 +37,7 @@ function Skillpage() {
               <img src="/certificates/resume-preview.webp" alt="RESUME" />
             </button>
             <a
-              href="/Phuriphat-Choompungam-Frontend-Developer.pdf"
+              href="/Phuriphat-Choompungam-UXUI-Frontend.pdf"
               className="btn btn-primary"
               download
             >

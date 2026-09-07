@@ -7,11 +7,13 @@ function Hero(props) {
       </h1>
 
       <div className="hero-lead">
-        <p className="lead-role">Frontend Developer</p>
+        <p className="lead-role">UX/UI Designer &amp; Front-End Developer</p>
 
         <p className="lead-sub">
-          สวัสดีครับ ผมภูริพัส ชุมภูงาม กำลังสนใจในตำแหน่ง Frontend Developer
-          เป็นคนที่ชอบเรียนรู้และพัฒนาครับ
+          สวัสดีครับ ผมภูริพัส ชุมภูงาม สนใจตำแหน่ง UX/UI Designer และ Front-End
+          Developer มีความสนใจในการออกแบบและพัฒนาเว็บไซต์ด้วยเทคโนโลยีใหม่ ๆ
+          และมีประสบการณ์ในการทำงานกับ React, JavaScript, HTML, CSS
+          และเครื่องมือออกแบบ UI/UX
         </p>
 
         <div className="hero-buttons">
@@ -26,12 +28,12 @@ function Hero(props) {
             ติดต่อผม
           </button>
           <a
-            href="/Phuriphat-Choompungam-Frontend-Developer.pdf"
-            className="btn btn-ghost" download
+            href="/Phuriphat-Choompungam-UXUI-Frontend.pdf"
+            className="btn btn-ghost"
+            download
           >
             Download CV
           </a>
-          
         </div>
       </div>
 
