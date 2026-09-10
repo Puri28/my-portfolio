@@ -14,6 +14,7 @@ function Navbar(props) {
 
       <div className={`nav-links ${isOpen ? "open":""}`}>
         <button onClick={() => goto("home")}>Home</button>
+        <button onClick={() => goto("casestudy")}>CASE STUDY</button>
         <button onClick={() => goto("skills")}>MY SKILL</button>
         <button onClick={() => goto("contact")}>CONTACT</button>
       </div>

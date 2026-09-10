@@ -605,6 +605,216 @@ section + section {
 }
 
 /* ============================================================
+   7.5 CASE STUDY
+   ============================================================ */
+.case-head {
+  margin-bottom: 56px;
+}
+
+.case-status {
+  display: inline-block;
+  margin: 0 0 16px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--accent-border);
+  background: var(--accent-bg);
+  color: var(--accent);
+  font-size: 13px;
+  letter-spacing: 0.02em;
+}
+
+#case-study h1 {
+  margin: 0;
+  font-family: "Antonio", sans-serif;
+  font-size: clamp(32px, 6vw, 64px);
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: var(--text-h);
+}
+
+.case-sub {
+  margin: 6px 0 20px;
+  font-size: 16px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+.case-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.case-tools span {
+  padding: 5px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  font-size: 13px;
+}
+
+.case-block {
+  margin-bottom: 56px;
+}
+
+.case-block h2 {
+  margin: 0 0 16px;
+  font-size: clamp(20px, 3vw, 28px);
+  color: var(--text-h);
+}
+
+.case-block h3 {
+  margin: 0 0 10px;
+  font-size: 17px;
+  color: var(--text-h);
+}
+
+.case-block p {
+  margin: 0 0 14px;
+  line-height: 1.75;
+}
+
+.case-list {
+  margin: 0 0 14px;
+  padding-left: 20px;
+  line-height: 1.9;
+}
+
+.case-list li::marker {
+  color: var(--accent);
+}
+
+.case-hint {
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+/* --- ผู้ใช้จริง : 2 คอลัมน์เทียบกัน --- */
+.case-compare {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.case-compare > div {
+  padding: 18px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.case-compare h4 {
+  margin: 0 0 8px;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+}
+
+.case-compare p {
+  margin: 0;
+}
+
+/* --- User Flow --- */
+.flow-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin: 20px 0 10px;
+}
+
+.flow-grid figure {
+  margin: 0;
+}
+
+.flow-grid img {
+  width: 100%;
+  max-height: 560px;
+  object-fit: contain;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px;
+  box-sizing: border-box;
+  cursor: zoom-in;
+}
+
+.flow-grid figcaption {
+  margin-top: 10px;
+  font-size: 13px;
+  text-align: center;
+  color: var(--text);
+}
+
+/* --- การตัดสินใจ --- */
+.decision {
+  margin-bottom: 28px;
+  padding-left: 18px;
+  border-left: 2px solid var(--border);
+}
+
+/* --- บล็อกเน้น : ส่วนที่จงใจไม่ทำเป็นระบบ --- */
+.case-highlight {
+  padding: 28px;
+  border: 1px solid var(--accent-border);
+  border-radius: 12px;
+  background: var(--accent-bg);
+}
+
+.case-highlight h2 {
+  color: var(--accent);
+}
+
+/* --- ตัวเลขเป้าหมาย --- */
+.case-metric {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.case-metric > div {
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.case-metric h4 {
+  margin: 0 0 6px;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+.case-metric p {
+  margin: 0 0 4px;
+  font-family: "Antonio", sans-serif;
+  font-size: 40px;
+  line-height: 1.1;
+  color: var(--accent);
+}
+
+.case-metric small {
+  font-size: 12px;
+  opacity: 0.75;
+}
+
+/* --- ขั้นต่อไป --- */
+.case-todo {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: 2;
+}
+
+.case-todo li::before {
+  content: "☐";
+  margin-right: 10px;
+  color: var(--accent);
+}
+
+/* ============================================================
    8. RESPONSIVE  —  ต้องอยู่ล่างสุดของไฟล์เสมอ
    ============================================================ */
 @media (max-width: 1024px) {

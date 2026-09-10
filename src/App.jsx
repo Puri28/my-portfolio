@@ -4,6 +4,8 @@ import Navbar from './components/Navbar';
 import Homepage from './pages/Homepage';
 import Skillpage from './pages/Skillpage';
 import Contactpage from './pages/Contactpage';
+import CaseStudyPage from './pages/CaseStudyPage';
+
 
 function App() {
     const [Page, setPage] = useState('home');
@@ -14,6 +16,7 @@ function App() {
             {Page === 'home' && <Homepage setPage={setPage} />}
             {Page === 'skills' && <Skillpage />}
             {Page === 'contact' && <Contactpage />}
+            {Page === 'casestudy' && <CaseStudyPage />}
         </>
     );
 }
