@@ -37,7 +37,7 @@ function Skillpage() {
               <img src="/certificates/resume-preview.webp" alt="RESUME" />
             </button>
             <a
-              href="/Phuriphat-Choompungam-UXUI-Frontend.pdf"
+              href="/Phuriphat-Chompoongam-UXUI-Frontend.pdf"
               className="btn btn-primary"
               download
             >

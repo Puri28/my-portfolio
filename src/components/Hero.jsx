@@ -3,7 +3,7 @@ function Hero(props) {
     <section id="hero">
       <h1>
         <span className="name-first">PHURIPHAT</span>
-        <span className="name-last">CHOOMPUNGAM</span>
+        <span className="name-last">CHOMPOONGAM</span>
       </h1>
 
       <div className="hero-lead">
@@ -28,7 +28,7 @@ function Hero(props) {
             ติดต่อผม
           </button>
           <a
-            href="/Phuriphat-Choompungam-UXUI-Frontend.pdf"
+            href="/Phuriphat-Chompoongam-UXUI-Frontend.pdf"
             className="btn btn-ghost"
             download
           >
